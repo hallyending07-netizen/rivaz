@@ -277,14 +277,14 @@ function App() {
             <div>
               <h5 className="font-semibold mb-4" data-testid="footer-contact-title">Contact Us</h5>
               <div className="space-y-2 text-sm">
-                <a href="tel:9654524333" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors" data-testid="footer-phone">
+                <a href="tel:+919654524333" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors" data-testid="footer-phone">
                   <Phone className="w-4 h-4" />
                   9654524333
                 </a>
-                <button onClick={handleWhatsAppClick} className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors" data-testid="footer-whatsapp">
+                <a href="https://wa.me/919654524332?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Rivaz%20Boutique" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors" data-testid="footer-whatsapp">
                   <Phone className="w-4 h-4" />
                   WhatsApp: 9654524332
-                </button>
+                </a>
                 <a href="https://instagram.com/the_rivaz_studio" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors" data-testid="footer-instagram">
                   <Instagram className="w-4 h-4" />
                   @the_rivaz_studio
