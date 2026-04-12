@@ -1,34 +1,57 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap');
+
+.App {
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.font-playfair {
+  font-family: 'Playfair Display', serif;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
 }
 
-.App-link {
-    color: #61dafb;
+body {
+  font-family: 'Outfit', sans-serif;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-primary {
+  color: #C83E6C;
+}
+
+.bg-primary {
+  background-color: #C83E6C;
+}
+
+.bg-secondary {
+  background-color: #FDF2F5;
+}
+
+.bg-accent {
+  background-color: #25D366;
+}
+
+.border-pink-50 {
+  border-color: #FDF2F5;
+}
+
+.border-pink-200 {
+  border-color: #fecdd3;
+}
+
+.hover\:bg-primary\/90:hover {
+  background-color: rgba(200, 62, 108, 0.9);
+}
+
+.hover\:bg-accent\/90:hover {
+  background-color: rgba(37, 211, 102, 0.9);
+}
+
+.focus\:ring-primary:focus {
+  --tw-ring-color: #C83E6C;
 }
