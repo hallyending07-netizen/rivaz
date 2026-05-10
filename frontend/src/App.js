@@ -108,26 +108,26 @@ function App() {
 
       {/* ───── HEADER ───── */}
       <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50" data-testid="header">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-3 flex justify-between items-center">
-          <button onClick={() => scrollToSection('home')} className="text-2xl md:text-3xl font-playfair font-semibold text-rose" data-testid="site-title">
+        <div className="max-w-7xl mx-auto px-3 md:px-6 py-3 flex justify-between items-center">
+          <button onClick={() => scrollToSection('home')} className="text-xl md:text-2xl font-playfair font-semibold text-rose" data-testid="site-title">
             Rivaz Boutique
           </button>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-6" data-testid="desktop-nav">
+          <nav className="hidden md:flex items-center gap-3 lg:gap-5" data-testid="desktop-nav">
             {NAV_LINKS.map((l) => (
-              <button key={l.id} onClick={() => scrollToSection(l.id)} className="text-sm text-gray-600 hover:text-rose transition-colors" data-testid={`nav-${l.id}`}>
+              <button key={l.id} onClick={() => scrollToSection(l.id)} className="text-xs lg:text-sm text-gray-600 hover:text-rose transition-colors whitespace-nowrap" data-testid={`nav-${l.id}`}>
                 {l.label}
               </button>
             ))}
           </nav>
 
-          <div className="flex items-center gap-3">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-whatsapp text-white px-4 md:px-5 py-2 rounded-full font-medium hover:brightness-110 transition-all flex items-center gap-2 text-sm" data-testid="header-whatsapp-button">
+          <div className="flex items-center gap-2">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-whatsapp text-white px-3 md:px-4 py-2 rounded-full font-medium hover:brightness-110 transition-all flex items-center gap-2 text-xs md:text-sm whitespace-nowrap" data-testid="header-whatsapp-button">
               <MessageCircle className="w-4 h-4" />
               <span className="hidden sm:inline">Book An Appointment</span>
             </a>
-            <button className="lg:hidden text-gray-700" onClick={() => setMobileMenu(!mobileMenu)} data-testid="mobile-menu-toggle">
+            <button className="md:hidden text-gray-700" onClick={() => setMobileMenu(!mobileMenu)} data-testid="mobile-menu-toggle">
               {mobileMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
@@ -135,7 +135,7 @@ function App() {
 
         {/* Mobile Nav */}
         {mobileMenu && (
-          <nav className="lg:hidden bg-white border-t px-4 py-4 space-y-3" data-testid="mobile-nav">
+          <nav className="md:hidden bg-white border-t px-4 py-4 space-y-3" data-testid="mobile-nav">
             {NAV_LINKS.map((l) => (
               <button key={l.id} onClick={() => { scrollToSection(l.id); setMobileMenu(false); }} className="block w-full text-left text-gray-700 hover:text-rose transition-colors py-1" data-testid={`mobile-nav-${l.id}`}>
                 {l.label}
