@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
@@ -18,7 +18,7 @@ export function ContactForm() {
       setFormData({ name: '', phone: '', message: '' });
       setTimeout(() => setShowSuccess(false), 3000);
     } catch (error) {
-      console.error('Error submitting form:', error);
+      // Silently fail - user sees no success message as feedback
     }
     setIsSubmitting(false);
   };

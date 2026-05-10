@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapPin, Phone, Instagram, MessageCircle } from 'lucide-react';
 import { WHATSAPP_NUM, CALL_NUM, INSTAGRAM, ADDRESS } from '../constants';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Scissors, Package, Truck } from 'lucide-react';
 import { SERVICE_CATEGORIES, STITCHING_SERVICES } from '../constants';
 
