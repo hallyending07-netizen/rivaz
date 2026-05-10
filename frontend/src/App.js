@@ -25,8 +25,8 @@ function App() {
     <div className="min-h-screen bg-white font-outfit">
       <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50" data-testid="header">
         <div className="max-w-7xl mx-auto px-3 md:px-6 py-3 flex justify-between items-center">
-          <button onClick={() => scrollToSection('home')} className="text-xl md:text-2xl font-playfair font-semibold text-rose" data-testid="site-title">
-            Rivaz Boutique
+          <button onClick={() => scrollToSection('home')} className="flex items-center gap-2" data-testid="site-title">
+            <img src="https://static.prod-images.emergentagent.com/jobs/e4fdd787-24ba-4cf8-a44f-55dc826a8083/images/5de0b5d4031af658983f41809ec2cf345fb5f6d9998f285e31dc9a7b74409a08.png" alt="Rivaz Boutique logo designer boutique Ghaziabad" className="h-10 md:h-12 w-auto" />
           </button>
           <nav className="hidden md:flex items-center gap-3 lg:gap-5" data-testid="desktop-nav">
             {NAV_LINKS.map((l) => (
