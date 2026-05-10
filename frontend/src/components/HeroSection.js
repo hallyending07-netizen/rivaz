@@ -11,12 +11,9 @@ export function HeroSection({ whatsappLink, onScrollToPricing }) {
         <p className="text-base sm:text-lg text-white/90 mb-8 font-light" data-testid="hero-subtitle">Women's Designer Boutique in Ghaziabad | Indirapuram | Noida | Delhi</p>
         <p className="text-sm text-white/80 mb-2" data-testid="hero-subtitle-2">Latest Lehnga, Kurta, Blouse, Gown, Saree Trends 2026</p>
         <p className="text-sm text-white/90 font-medium mb-5" data-testid="hero-stitching-note">Custom Stitching &amp; Alterations Available</p>
-        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-whatsapp text-white px-6 py-2 rounded-full font-semibold text-lg mb-4 hover:brightness-110 transition-all shadow-md" data-testid="hero-whatsapp-badge">
+        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-whatsapp text-white px-6 py-2 rounded-full font-semibold text-lg mb-6 hover:brightness-110 transition-all shadow-md" data-testid="hero-whatsapp-badge">
           <MessageCircle className="w-5 h-5" />{WHATSAPP_NUM}
         </a>
-        <div className="mb-6">
-          <button onClick={onScrollToPricing} className="inline-flex items-center gap-2 bg-rose text-white px-6 py-2 rounded-full font-medium hover:brightness-110 transition-all shadow-md" data-testid="hero-pricing-btn">Click To Check The Pricing</button>
-        </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-whatsapp text-white px-8 py-4 rounded-full font-medium text-lg hover:brightness-110 transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-3" data-testid="hero-whatsapp-cta">
             <MessageCircle className="w-5 h-5" />Book on WhatsApp
