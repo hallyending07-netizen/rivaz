@@ -14,7 +14,7 @@ export function AboutSection() {
           </div>
           <div className="order-1 md:order-2">
             <div className="rounded-2xl overflow-hidden shadow-2xl" data-testid="owner-image-container">
-              <img src={OWNER_IMAGE} alt="Munna Idresy - Owner of Rivaz Boutique" className="w-full h-96 object-cover" data-testid="owner-image" />
+              <img src={OWNER_IMAGE} alt="Munna Idresy master tailor 35 years experience Rivaz Boutique Ghaziabad" className="w-full h-96 object-cover" data-testid="owner-image" />
             </div>
           </div>
         </div>

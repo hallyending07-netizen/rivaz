@@ -20,7 +20,7 @@ export function ServicesSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12" data-testid="service-categories-grid">
           {SERVICE_CATEGORIES.map((cat) => (
             <div key={cat.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all" data-testid={`service-cat-${cat.id}`}>
-              <img src={cat.image} alt={cat.title} className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300" />
+              <img src={cat.image} alt={cat.alt} className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <h4 className="text-xl font-playfair font-semibold mb-1" data-testid={`service-cat-title-${cat.id}`}>{cat.title}</h4>

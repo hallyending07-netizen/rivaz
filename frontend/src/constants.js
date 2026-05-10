@@ -18,36 +18,42 @@ export const SERVICE_CATEGORIES = [
     id: 'cat-kurta',
     title: 'Ladies Kurta',
     image: 'https://images.unsplash.com/photo-1759840278276-fe8d58873dc3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBsYWRpZXMlMjBrdXJ0YSUyMGV0aG5pYyUyMHdlYXJ8ZW58MHx8fHwxNzc4NDI5MTIxfDA&ixlib=rb-4.1.0&q=85',
+    alt: 'designer ladies kurta boutique Ghaziabad Indirapuram',
     description: 'Beautifully stitched kurtas for every occasion'
   },
   {
     id: 'cat-blouse',
     title: 'Blouse',
     image: 'https://images.unsplash.com/photo-1756483509157-4c8cb951b3e8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBkZXNpZ25lciUyMGJsb3VzZSUyMGV0aG5pY3xlbnwwfHx8fDE3Nzg0MjkxMjF8MA&ixlib=rb-4.1.0&q=85',
+    alt: 'designer blouse stitching boutique Delhi NCR',
     description: 'Designer blouses with perfect fitting'
   },
   {
     id: 'cat-lehnga',
     title: 'Lehnga',
     image: 'https://images.unsplash.com/photo-1767955694884-d4bf352c23c2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBicmlkYWwlMjBsZWhlbmdhJTIwZXRobmljfGVufDB8fHx8MTc3ODQyOTEyMXww&ixlib=rb-4.1.0&q=85',
+    alt: 'bridal lehenga shop Ghaziabad Noida Delhi',
     description: 'Stunning lehngas for weddings & celebrations'
   },
   {
     id: 'cat-saree',
     title: 'Saree',
     image: 'https://images.unsplash.com/photo-1742287721821-ddf522b3f37b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBzaWxrJTIwc2FyZWUlMjBldGhuaWN8ZW58MHx8fHwxNzc4NDI5MTIxfDA&ixlib=rb-4.1.0&q=85',
+    alt: 'designer silk saree boutique Indirapuram Delhi',
     description: 'Elegant sarees in silk, georgette & more'
   },
   {
     id: 'cat-suit',
     title: 'Suit',
     image: 'https://images.unsplash.com/photo-1759840278361-f1adc75529a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBsYWRpZXMlMjBrdXJ0YSUyMGV0aG5pYyUyMHdlYXJ8ZW58MHx8fHwxNzc4NDI5MTIxfDA&ixlib=rb-4.1.0&q=85',
+    alt: 'designer anarkali salwar suit boutique Noida Ghaziabad',
     description: 'Anarkali, Palazzo & Salwar suits'
   },
   {
     id: 'cat-gown',
     title: 'Gown',
     image: 'https://images.unsplash.com/photo-1756483510803-eb23dedd21ab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBkZXNpZ25lciUyMGJsb3VzZSUyMGV0aG5pY3xlbnwwfHx8fDE3Nzg0MjkxMjF8MA&ixlib=rb-4.1.0&q=85',
+    alt: 'party wear gown stitching Delhi NCR boutique',
     description: 'Party wear gowns for special occasions'
   }
 ];

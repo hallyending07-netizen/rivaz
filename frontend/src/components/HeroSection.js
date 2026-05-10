@@ -8,8 +8,9 @@ export function HeroSection({ whatsappLink, onScrollToPricing }) {
       <div className="absolute inset-0 bg-black/30" />
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-semibold text-white mb-4 leading-tight drop-shadow-lg" data-testid="hero-title">Rivaz Boutique</h1>
-        <p className="text-base sm:text-lg text-white/90 mb-2 font-light" data-testid="hero-subtitle">Book An Appointment</p>
-        <p className="text-sm text-white/80 mb-4" data-testid="hero-stitching-note">Stitching Available</p>
+        <p className="text-base sm:text-lg text-white/90 mb-1 font-light" data-testid="hero-subtitle">Women's Designer Boutique in Ghaziabad | Indirapuram | Noida | Delhi</p>
+        <p className="text-sm text-white/80 mb-1" data-testid="hero-subtitle-2">Latest Lehenga, Kurta, Blouse, Gown, Saree Trends 2026</p>
+        <p className="text-sm text-white/90 font-medium mb-4" data-testid="hero-stitching-note">Custom Stitching &amp; Alterations Available</p>
         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-whatsapp text-white px-6 py-2 rounded-full font-semibold text-lg mb-4 hover:brightness-110 transition-all shadow-md" data-testid="hero-whatsapp-badge">
           <MessageCircle className="w-5 h-5" />{WHATSAPP_NUM}
         </a>
