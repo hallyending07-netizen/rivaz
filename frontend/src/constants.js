@@ -32,7 +32,7 @@ export const SERVICE_CATEGORIES = [
     id: 'cat-lehnga',
     title: 'Lehnga',
     image: 'https://images.unsplash.com/photo-1767955694884-d4bf352c23c2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBicmlkYWwlMjBsZWhlbmdhJTIwZXRobmljfGVufDB8fHx8MTc3ODQyOTEyMXww&ixlib=rb-4.1.0&q=85',
-    alt: 'bridal lehenga shop Ghaziabad Noida Delhi',
+    alt: 'bridal lehnga shop Ghaziabad Noida Delhi',
     description: 'Stunning lehngas for weddings & celebrations'
   },
   {
