@@ -17,10 +17,6 @@ export function HeroSection({ whatsappLink, onScrollToPricing }) {
         <div className="mb-6">
           <button onClick={onScrollToPricing} className="inline-flex items-center gap-2 bg-rose text-white px-6 py-2 rounded-full font-medium hover:brightness-110 transition-all shadow-md" data-testid="hero-pricing-btn">Click To Check The Pricing</button>
         </div>
-        <div className="flex items-center justify-center gap-2 text-white/90 mb-6" data-testid="hero-location">
-          <MapPin className="w-5 h-5 text-white flex-shrink-0" />
-          <p className="text-sm sm:text-base">{ADDRESS}</p>
-        </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-whatsapp text-white px-8 py-4 rounded-full font-medium text-lg hover:brightness-110 transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-3" data-testid="hero-whatsapp-cta">
             <MessageCircle className="w-5 h-5" />Book on WhatsApp
