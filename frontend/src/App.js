@@ -8,18 +8,17 @@ const API = `${BACKEND_URL}/api`;
 
 const NAV_LINKS = [
   { label: 'Home', id: 'home' },
-  { label: 'About Us', id: 'about' },
   { label: 'Services', id: 'services' },
-  { label: 'Collection', id: 'collection' },
   { label: 'Pricing', id: 'pricing' },
-  { label: 'Policies', id: 'policies' },
-  { label: 'Contact Us', id: 'contact' },
+  { label: 'Shopping Policies', id: 'policies' },
+  { label: 'Contact', id: 'contact' },
+  { label: 'About Us', id: 'about' },
 ];
 
 const OWNER_IMAGE = 'https://customer-assets.emergentagent.com/job_e4fdd787-24ba-4cf8-a44f-55dc826a8083/artifacts/8mvgim9m_1000316404.jpg';
 const ADDRESS = 'Shop No. 284, Rivaz Boutique, Opposite Amarpali Village Gate No. 1, Nyay Khand 2, Makanpur, Ghaziabad';
 const WHATSAPP_NUM = '9811400565';
-const CALL_NUM = '9654524333';
+const CALL_NUM = '9811400565';
 const INSTAGRAM = 'the_rivaz_studio';
 
 const SERVICE_CATEGORIES = [
@@ -126,7 +125,7 @@ function App() {
           <div className="flex items-center gap-3">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-whatsapp text-white px-4 md:px-5 py-2 rounded-full font-medium hover:brightness-110 transition-all flex items-center gap-2 text-sm" data-testid="header-whatsapp-button">
               <MessageCircle className="w-4 h-4" />
-              <span className="hidden sm:inline">Book Now</span>
+              <span className="hidden sm:inline">Book An Appointment</span>
             </a>
             <button className="lg:hidden text-gray-700" onClick={() => setMobileMenu(!mobileMenu)} data-testid="mobile-menu-toggle">
               {mobileMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -155,12 +154,26 @@ function App() {
             Rivaz Boutique
           </h1>
           <p className="text-base sm:text-lg text-gray-700 mb-2 font-light" data-testid="hero-subtitle">
-            Your Destination for Elegant Ethnic Wear &amp; Custom Stitching
+            Book An Appointment
           </p>
-          <p className="text-sm text-gray-600 mb-6" data-testid="hero-stitching-note">
+          <p className="text-sm text-gray-600 mb-4" data-testid="hero-stitching-note">
             Stitching Available
           </p>
-          <div className="flex items-center justify-center gap-2 text-gray-800 mb-8" data-testid="hero-location">
+
+          {/* WhatsApp Number Badge */}
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-whatsapp text-white px-6 py-2 rounded-full font-semibold text-lg mb-4 hover:brightness-110 transition-all shadow-md" data-testid="hero-whatsapp-badge">
+            <MessageCircle className="w-5 h-5" />
+            {WHATSAPP_NUM}
+          </a>
+
+          {/* Click to Check Pricing */}
+          <div className="mb-6">
+            <button onClick={() => scrollToSection('pricing')} className="inline-flex items-center gap-2 bg-rose text-white px-6 py-2 rounded-full font-medium hover:brightness-110 transition-all shadow-md" data-testid="hero-pricing-btn">
+              Click To Check The Pricing
+            </button>
+          </div>
+
+          <div className="flex items-center justify-center gap-2 text-gray-800 mb-6" data-testid="hero-location">
             <MapPin className="w-5 h-5 text-rose flex-shrink-0" />
             <p className="text-sm sm:text-base">{ADDRESS}</p>
           </div>
@@ -173,36 +186,6 @@ function App() {
               <Phone className="w-5 h-5" />
               Call Now
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ───── ABOUT US ───── */}
-      <section id="about" className="py-16 md:py-24 px-4 bg-blush" data-testid="about-section">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
-              <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6 text-gray-900" data-testid="about-title">
-                About Us
-              </h2>
-              <h3 className="text-2xl font-playfair text-rose mb-4" data-testid="owner-name">
-                Munna Idresy
-              </h3>
-              <p className="text-rose font-semibold mb-4" data-testid="owner-experience">
-                35+ Years of Master Craftsmanship
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-4" data-testid="owner-description">
-                With over three decades of dedication to the art of tailoring, Munna Idresy brings unparalleled expertise and passion to every garment. His meticulous attention to detail and commitment to perfection has made Rivaz Boutique a trusted name in custom stitching and alterations across Ghaziabad.
-              </p>
-              <p className="text-gray-600 leading-relaxed" data-testid="owner-description-2">
-                From bridal lehngas to everyday kurtas, every piece at Rivaz Boutique is crafted with love and precision to make you look and feel your best.
-              </p>
-            </div>
-            <div className="order-1 md:order-2">
-              <div className="rounded-2xl overflow-hidden shadow-2xl" data-testid="owner-image-container">
-                <img src={OWNER_IMAGE} alt="Munna Idresy - Owner of Rivaz Boutique" className="w-full h-96 object-cover" data-testid="owner-image" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -377,6 +360,66 @@ function App() {
                 </div>
               </form>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ───── ABOUT US ───── */}
+      <section id="about" className="py-16 md:py-24 px-4 bg-blush" data-testid="about-section">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6 text-gray-900" data-testid="about-title">
+                About Us
+              </h2>
+              <h3 className="text-2xl font-playfair text-rose mb-4" data-testid="owner-name">
+                Munna Idresy
+              </h3>
+              <p className="text-rose font-semibold mb-4" data-testid="owner-experience">
+                35+ Years of Master Craftsmanship
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-4" data-testid="owner-description">
+                With over three decades of dedication to the art of tailoring, Munna Idresy brings unparalleled expertise and passion to every garment. His meticulous attention to detail and commitment to perfection has made Rivaz Boutique a trusted name in custom stitching and alterations across Ghaziabad.
+              </p>
+              <p className="text-gray-600 leading-relaxed" data-testid="owner-description-2">
+                From bridal lehngas to everyday kurtas, every piece at Rivaz Boutique is crafted with love and precision to make you look and feel your best.
+              </p>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="rounded-2xl overflow-hidden shadow-2xl" data-testid="owner-image-container">
+                <img src={OWNER_IMAGE} alt="Munna Idresy - Owner of Rivaz Boutique" className="w-full h-96 object-cover" data-testid="owner-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ───── TESTIMONIALS ───── */}
+      <section id="testimonials" className="py-16 md:py-24 px-4" data-testid="testimonials-section">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-4 text-gray-900" data-testid="testimonials-title">What Our Customers Say</h2>
+            <div className="w-20 h-1 bg-rose mx-auto" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6" data-testid="testimonials-grid">
+            {[
+              { name: 'Priya Sharma', text: 'Amazing stitching quality! Got my bridal lehnga done from Rivaz Boutique and it was absolutely perfect. Munna bhai is a true craftsman.', rating: 5 },
+              { name: 'Anjali Gupta', text: 'Best boutique in Ghaziabad for custom stitching. The fitting was perfect and delivery was on time. Free pick & drop service is a bonus!', rating: 5 },
+              { name: 'Neha Singh', text: 'I have been getting my clothes stitched from here for years. The quality and attention to detail is unmatched. Highly recommended!', rating: 5 },
+              { name: 'Ritu Verma', text: 'Got my daughter\'s wedding outfits done from Rivaz Boutique. Every piece was beautifully crafted. Thank you Munna bhai!', rating: 5 },
+              { name: 'Sunita Yadav', text: 'Very professional and skilled tailoring. The alterations they did on my saree blouse were perfect. Will definitely come back again.', rating: 5 },
+              { name: 'Kavita Jain', text: 'Excellent work on my Anarkali suit. The embroidery and stitching quality is top-notch. Reasonable pricing too!', rating: 5 },
+            ].map((t, i) => (
+              <div key={i} className="bg-blush rounded-2xl p-6 shadow-lg border border-pink-100" data-testid={`testimonial-${i}`}>
+                <div className="flex gap-1 mb-3 text-yellow-400" data-testid={`testimonial-stars-${i}`}>
+                  {Array.from({ length: t.rating }).map((_, j) => (
+                    <svg key={j} className="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" /></svg>
+                  ))}
+                </div>
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed italic" data-testid={`testimonial-text-${i}`}>"{t.text}"</p>
+                <p className="font-semibold text-gray-900" data-testid={`testimonial-name-${i}`}>{t.name}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
