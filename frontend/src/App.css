@@ -4,54 +4,10 @@
   min-height: 100vh;
 }
 
-.font-playfair {
-  font-family: 'Playfair Display', serif;
-}
-
-.font-outfit {
-  font-family: 'Outfit', sans-serif;
-}
-
 body {
   font-family: 'Outfit', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
-}
-
-.text-primary {
-  color: #C83E6C;
-}
-
-.bg-primary {
-  background-color: #C83E6C;
-}
-
-.bg-secondary {
-  background-color: #FDF2F5;
-}
-
-.bg-accent {
-  background-color: #25D366;
-}
-
-.border-pink-50 {
-  border-color: #FDF2F5;
-}
-
-.border-pink-200 {
-  border-color: #fecdd3;
-}
-
-.hover\:bg-primary\/90:hover {
-  background-color: rgba(200, 62, 108, 0.9);
-}
-
-.hover\:bg-accent\/90:hover {
-  background-color: rgba(37, 211, 102, 0.9);
-}
-
-.focus\:ring-primary:focus {
-  --tw-ring-color: #C83E6C;
 }
