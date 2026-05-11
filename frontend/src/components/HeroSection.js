@@ -4,7 +4,7 @@ import { ADDRESS, WHATSAPP_NUM, CALL_NUM } from '../constants';
 export function HeroSection({ whatsappLink, onScrollToPricing }) {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16" data-testid="hero-section">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(https://static.prod-images.emergentagent.com/jobs/e4fdd787-24ba-4cf8-a44f-55dc826a8083/images/7d5fa1ae63b1fb4bb02a8a1fb8424cb8a332ec613eae0761b0b74ef6fb135db8.png)' }} />
+      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(https://static.prod-images.emergentagent.com/jobs/e4fdd787-24ba-4cf8-a44f-55dc826a8083/images/7d5fa1ae63b1fb4bb02a8a1fb8424cb8a332ec613eae0761b0b74ef6fb135db8.png?v=2)', zIndex: 0 }} />
       <div className="absolute inset-0 bg-black/30" />
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-semibold text-white mb-4 leading-tight drop-shadow-lg" data-testid="hero-title">Rivaz Boutique</h1>
