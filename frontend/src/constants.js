@@ -17,7 +17,7 @@ export const SERVICE_CATEGORIES = [
   {
     id: 'cat-kurta',
     title: 'Ladies Kurta',
-    image: 'https://images.unsplash.com/photo-1759840278276-fe8d58873dc3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBsYWRpZXMlMjBrdXJ0YSUyMGV0aG5pYyUyMHdlYXJ8ZW58MHx8fHwxNzc4NDI5MTIxfDA&ixlib=rb-4.1.0&q=85',
+    image: 'https://customer-assets.emergentagent.com/job_rivaz-stitching/artifacts/ypoxtf5q_1000358398.jpg',
     alt: 'designer ladies kurta boutique Ghaziabad Indirapuram',
     description: 'Beautifully stitched kurtas for every occasion'
   },
