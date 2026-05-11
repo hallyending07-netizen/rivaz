@@ -12,7 +12,7 @@ export function CollectionSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="collection-grid">
           {GALLERY_DRESSES.map((dress) => (
             <div key={dress.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all" data-testid={`dress-card-${dress.id}`}>
-              <img src={dress.url} alt={dress.alt} className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" data-testid={`dress-image-${dress.id}`} />
+              <img src={dress.url} alt={dress.alt} className="w-full h-auto min-h-[320px] object-contain group-hover:scale-105 transition-transform duration-300" data-testid={`dress-image-${dress.id}`} />
             </div>
           ))}
         </div>
