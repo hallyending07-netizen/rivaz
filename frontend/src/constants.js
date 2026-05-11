@@ -67,7 +67,7 @@ export const GALLERY_DRESSES = [
   { id: 'dress-6', url: 'https://images.unsplash.com/photo-1760461804986-b9eeaa24cf28?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwzfHxsZWhlbmdhJTIwd2VkZGluZyUyMGZhc2hpb258ZW58MHx8fHwxNzc1OTc0NDgxfDA&ixlib=rb-4.1.0&q=85' },
   { id: 'dress-7', url: 'https://images.unsplash.com/photo-1760461804065-febded675ae2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHw0fHxsZWhlbmdhJTIwd2VkZGluZyUyMGZhc2hpb258ZW58MHx8fHwxNzc1OTc0NDgxfDA&ixlib=rb-4.1.0&q=85' },
   { id: 'dress-8', url: 'https://images.unsplash.com/photo-1756483554416-1b2358bc916c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxwaW5rJTIwbGVoZW5nYSUyMGZhc2hpb258ZW58MHx8fHwxNzc1OTc0NDk5fDA&ixlib=rb-4.1.0&q=85' },
-  { id: 'dress-9', url: 'https://images.unsplash.com/photo-1760613130027-3959a3eb939c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBicmlkYWwlMjBvdXRmaXQlMjBldGhuaWMlMjBmYXNoaW9ufGVufDB8fHx8MTc3ODUyMDgxNnww&ixlib=rb-4.1.0&q=85', alt: 'bridal red gold designer outfit boutique Delhi NCR' }
+  { id: 'dress-9', url: 'https://images.unsplash.com/photo-1653220266006-27b87f590eaf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwyfHxoYW5kJTIwc3RpdGNoaW5nJTIwZW1icm9pZGVyeSUyMGZhYnJpYyUyMHNld2luZyUyMHRocmVhZCUyMG5lZWRsZXxlbnwwfHx8fDE3Nzg1MjA5NzB8MA&ixlib=rb-4.1.0&q=85', alt: 'hand stitching embroidery needle thread cloth boutique Ghaziabad' }
 ];
 
 export const STITCHING_SERVICES = [
