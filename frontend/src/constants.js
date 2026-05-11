@@ -67,7 +67,7 @@ export const GALLERY_DRESSES = [
   { id: 'dress-6', url: 'https://images.unsplash.com/photo-1760461804986-b9eeaa24cf28?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwzfHxsZWhlbmdhJTIwd2VkZGluZyUyMGZhc2hpb258ZW58MHx8fHwxNzc1OTc0NDgxfDA&ixlib=rb-4.1.0&q=85' },
   { id: 'dress-7', url: 'https://images.unsplash.com/photo-1760461804065-febded675ae2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHw0fHxsZWhlbmdhJTIwd2VkZGluZyUyMGZhc2hpb258ZW58MHx8fHwxNzc1OTc0NDgxfDA&ixlib=rb-4.1.0&q=85' },
   { id: 'dress-8', url: 'https://images.unsplash.com/photo-1756483554416-1b2358bc916c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxwaW5rJTIwbGVoZW5nYSUyMGZhc2hpb258ZW58MHx8fHwxNzc1OTc0NDk5fDA&ixlib=rb-4.1.0&q=85' },
-  { id: 'dress-9', url: 'https://images.unsplash.com/photo-1678536514579-fbe81d1f25c8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjB3b21lbiUyMGN1c3RvbSUyMHN0aXRjaGVkJTIwY290dG9uJTIwa3VydGElMjBoYW5kbWFkZXxlbnwwfHx8fDE3Nzg1MjEwNTh8MA&ixlib=rb-4.1.0&q=85', alt: 'custom stitched ladies kurta embroidery boutique Ghaziabad Delhi' }
+  { id: 'dress-9', url: 'https://images.pexels.com/photos/8771006/pexels-photo-8771006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', alt: 'full body stitched ladies kurta designer boutique Ghaziabad Delhi' }
 ];
 
 export const STITCHING_SERVICES = [
