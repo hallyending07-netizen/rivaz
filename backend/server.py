@@ -11,11 +11,31 @@ import uuid
 from datetime import datetime, timezone
 
 
+import urllib.parse
+import re
+
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
+def sanitize_mongo_uri(uri: str) -> str:
+    """Safely escape username and password in Mongo URI for RFC 3986 compliance."""
+    if not uri:
+        return 'mongodb://localhost:27017'
+    # Match mongodb:// or mongodb+srv:// credentials pattern
+    match = re.match(r'^(mongodb(?:\+srv)?://)([^:]+):(.+)@([^@]+)$', uri)
+    if match:
+        prefix, user, raw_pass, host_and_query = match.groups()
+        # Remove literal < and > if user accidentally kept them
+        user = user.strip('<>')
+        raw_pass = raw_pass.strip('<>')
+        user_enc = urllib.parse.quote_plus(urllib.parse.unquote_plus(user))
+        pass_enc = urllib.parse.quote_plus(urllib.parse.unquote_plus(raw_pass))
+        return f"{prefix}{user_enc}:{pass_enc}@{host_and_query}"
+    return uri
+
 # MongoDB connection
-mongo_url = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
+raw_mongo_url = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
+mongo_url = sanitize_mongo_uri(raw_mongo_url)
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ.get('DB_NAME', 'rivaz_db')]
 
