@@ -37,6 +37,10 @@ let webpackConfig = {
       '@': path.resolve(__dirname, 'src'),
     },
     configure: (webpackConfig) => {
+      // Remove ForkTsCheckerWebpackPlugin since this is a pure JS project and it avoids ajv schema issues
+      webpackConfig.plugins = webpackConfig.plugins.filter(
+        (plugin) => plugin.constructor && plugin.constructor.name !== 'ForkTsCheckerWebpackPlugin'
+      );
 
       // Add ignored patterns to reduce watched directories
         webpackConfig.watchOptions = {
@@ -80,21 +84,5 @@ webpackConfig.devServer = (devServerConfig) => {
 
   return devServerConfig;
 };
-
-// Wrap with visual edits (automatically adds babel plugin, dev server, and overlay in dev mode)
-if (isDevServer) {
-  try {
-    const { withVisualEdits } = require("@emergentbase/visual-edits/craco");
-    webpackConfig = withVisualEdits(webpackConfig);
-  } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND' && err.message.includes('@emergentbase/visual-edits/craco')) {
-      console.warn(
-        "[visual-edits] @emergentbase/visual-edits not installed — visual editing disabled."
-      );
-    } else {
-      throw err;
-    }
-  }
-}
 
 module.exports = webpackConfig;

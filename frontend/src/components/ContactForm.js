@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+const rawBackendUrl = process.env.REACT_APP_BACKEND_URL || '';
+const BACKEND_URL = rawBackendUrl.replace(/\/+$/, '');
+const API = BACKEND_URL ? `${BACKEND_URL}/api` : '/api';
 
 export function ContactForm() {
   const [formData, setFormData] = useState({ name: '', phone: '', message: '' });

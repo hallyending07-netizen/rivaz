@@ -41,6 +41,15 @@ class ContactMessageCreate(BaseModel):
     phone: str
     message: str
 
+# Root health check endpoints for cloud deployment platforms (Render/Vercel)
+@app.get("/")
+async def app_root():
+    return {"status": "ok", "message": "Rivaz Boutique Backend API is running"}
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+
 # Routes
 @api_router.get("/")
 async def root():
